@@ -1,146 +1,19 @@
+Required Changes:
 
-<h1  align="center">Welcome to vite-react-eslint-template 👋</h1>
+1. Use any css library,css,sass anything you prefer to update the ui of the application.
 
-<p>
+2. User Id and Password is mentioned in the login model login using that user name and password, on refresh user gets redirected to login page find a fix for this.
 
-<img  alt="Version"  src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000"  />
+3. The type for the product is missing and any is being used instead, Update the Product type with the help of data you receive form the api.
 
-</p>
+4. Make a grid/flex card UI for the product list view.
 
-> A react vite template to kick start your development
+5. Clinking the product should show a modal with the product Details.
 
+6. Add functionality to the add to card button, it should create a cart where user can view all the products in the cart and also add a remove from cart button.
 
-## **State Management**
+7. The cart total should be updated according to the no of products in the cart and there respected price.
 
-*[rematch](https://rematchjs.org/)* + *[react query](https://tanstack.com/query/v3/)*
-
-## **Pre Commit**
-
-*[Husky](https://www.npmjs.com/package/husky)*
-
-## **Code Formatter**
-
-*[prettier](https://prettier.io/)*
-
-## **Linter**
-
-*[eslint](https://eslint.org/)*
-
-
-## Recommended VS-code extensions
-
- - **Code Spell Checker**
-
-Id: streetsidesoftware.code-spell-checker
-Description: Spelling checker for source code
-Version: 2.11.0
-Publisher: Street Side Software
-VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
-
- - **ESLint**
-
-Id: dbaeumer.vscode-eslint
-Description: Integrates ESLint JavaScript into VS Code.
-Version: 2.2.6
-Publisher: Microsoft
-VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-
- - **Prettier - Code formatter**
-
-Id: esbenp.prettier-vscode
-Description: Code formatter using prettier
-Version: 9.9.0
-Publisher: Prettier
-VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-
- - **Prettier ESLint** (*optional*)
-
-Id: rvest.vs-code-prettier-eslint
-Description: A Visual Studio Extension to format JavaScript and Typescript code using prettier-eslint package
-Version: 5.0.4
-Publisher: Rebecca Vest
-VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint
-
-  ## eslint Rules
-
-
-
-
-**Functions**
- 
-
- - PascalCase *(JSX)*
- - strictCamelCase *(Class Methods)*
-
- **Variable**
- 
-
- - strictCamelCase
- - UPPER_CASE *(constant values)*
-
-  
-**TypeLike**
-
- - PascalCase
- - Prefix ``I``
-
-**parameter**
-
- - strictCamelCase
- 
- **class**
- - PascalCase
- - Prefix ``I``
-
- 
- 
-
-## Huskey pre-commit config
-
-    npx vitest --coverage --watch false
-
-    eslint . --ext .ts,.tsx
-## Test 
-
-    npx vitest
-
-## Install
-
-
-
-
-
-
-```sh
-
-npm install
-
-```
-
-  
-
-## Author
-
-  
-
-👤 **souvik dutta**
-
-  
-
-* Website: https://souvikdutta.netlify.app/
-
-* Github: [@souvik666](https://github.com/souvik666)
-
-  
-
-## Show your support
-
-  
-
-Give a ⭐️ if this project helped you!
-
-  
-
-***
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+For state management we are using Rematch : https://rematchjs.org/docs/
+For rest api management we are using React-query : https://tanstack.com/query/latest/docs/react/overview
+and axios : https://www.npmjs.com/package/axios
