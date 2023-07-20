@@ -1,4 +1,5 @@
-import { IInitialProductState, IProduct } from "@MyTypes/product.type";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { IInitialProductState } from "@MyTypes/product.type";
 
 import { IBaseService } from "./BaseService.service";
 
@@ -15,10 +16,10 @@ class IProductService extends IBaseService {
     return this.request({ url: "products" });
   }
   //get single product details
-  getSingleProduct(id?: string): Promise<IProduct> {
+  getSingleProduct(id?: string): Promise<any> {
     return this.request({ url: `products/${id}` });
   }
-  postAProduct(payload: IPayload): Promise<IProduct> {
+  postAProduct(payload: IPayload): Promise<any> {
     return this.request({
       url: "products/add",
       method: "post",

@@ -23,7 +23,13 @@ export default function ProductList(): JSX.Element {
     <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
       {data?.products
         ? data?.products.map((el) => {
-            return <Button key={el.id} onclick={() => HandleNavigation(el.id)} label={el.title} />;
+            return (
+              <div key={el.id}>
+                <p>{el.title}</p>
+
+                <Button key={el.id} label={"Add to cart"} />
+              </div>
+            );
           })
         : "no products found"}
     </div>

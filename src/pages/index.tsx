@@ -1,3 +1,4 @@
+import { RequireAuth } from "@components";
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
@@ -13,7 +14,9 @@ export default function AppRoutes() {
         path={"/products"}
         element={
           <Suspense fallback="loading..">
-            <ProductPage />
+            <RequireAuth>
+              <ProductPage />
+            </RequireAuth>
           </Suspense>
         }
       />
@@ -21,7 +24,9 @@ export default function AppRoutes() {
         path={"/products/:id"}
         element={
           <Suspense fallback="loading..">
-            <ProductDetailsView />
+            <RequireAuth>
+              <ProductDetailsView />
+            </RequireAuth>
           </Suspense>
         }
       />

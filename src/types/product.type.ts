@@ -1,23 +1,10 @@
-export type IProduct = {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  discountPercentage: number;
-  rating: number;
-  stock: number;
-  brand: string;
-  category: string;
-  thumbnail: string;
-  images: string[];
-};
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type IInitialProductState = {
   total: number;
   skip: number;
   limit: number;
-  products?: Array<IProduct>;
+  products?: Array<any>;
   loading?: boolean;
   error: unknown;
-  selectedProduct?: IProduct;
+  selectedProduct?: any;
 };

@@ -1,11 +1,12 @@
 import { Models } from "@rematch/core";
 
-import { contactUsModel } from "./contactUs";
+import { loginUserModel } from "./loginUser";
 import productModel from "./products";
 
 export interface IRootModel extends Models<IRootModel> {
   productModel: typeof productModel;
-  contactUsModel: typeof contactUsModel;
+
+  loginUserModel: typeof loginUserModel;
 }
 
-export const models: IRootModel = { productModel, contactUsModel };
+export const models: IRootModel = { productModel, loginUserModel };
